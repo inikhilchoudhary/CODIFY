@@ -3,13 +3,16 @@
 {% block head %}
 
 {% block title %}{% endblock title %} 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 <style>
   .service-item {
     background: lightblue;
     transition: .5s;
-    height: 200px; /* Adjust the height as needed */
-    border-radius: 15px; /* Adjust the border-radius to make it circular */
-    overflow: hidden; /* Ensure content doesn't overflow */
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
   }
 
   .service-item:hover {
@@ -24,6 +27,145 @@
   .service-item:hover * {
     color: white !important;
   }
+
+  .section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: white;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    position: absolute;
+    content: "";
+    background: var(--primary);
+    z-index: -1;
+  }
+
+  .section-title::before {
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+  }
+
+  .section-title::after {
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 5px;
+    left: -60px;
+  }
+
+  .section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+  }
+
+  .section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+  }
+
+  .about-us-points {
+    color: white;
+  }
+
+  .about-us-points i {
+    color: var(--primary);
+    margin-right: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 60px 0;
+           /* min-height: 100vh;*/
+        }
+ ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+section, footer {
+    background: #1A1E25;
+    color: #868c96;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+
+
 </style>
 
 {% endblock head %}
@@ -124,44 +266,84 @@
 
 <div class="container-xxl py-5">
   <div class="container">
-      <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
-              <div class="position-relative h-100">
-                <img class="img-fluid position-absolute w-100 h-100" src="/static/Codify.png" alt="" style="object-fit: cover;">
-              </div>
-          </div>
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
-              <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-              <h1 class="mb-4">Welcome to CODIFY</h1>
-              <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-              <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-              <div class="row gy-2 gx-4 mb-4">
-                  <div class="col-sm-6">
-                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
-                  </div>
-                  <div class="col-sm-6">
-                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
-                  </div>
-                  <div class="col-sm-6">
-                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
-                  </div>
-                  <div class="col-sm-6">
-                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
-                  </div>
-                  <div class="col-sm-6">
-                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
-                  </div>
-                  <div class="col-sm-6">
-                      <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
-                  </div>
-              </div>
-              <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
-          </div>
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px; visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+        <div class="position-relative h-100">
+          <img class="img-fluid position-absolute w-100 h-100" src="/static/Codify.png" alt="" style="object-fit: cover;">
+        </div>
       </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+        <h6 class="section-title text-start text-primary pe-3">About Us</h6>
+        <h1 class="mb-4 text-light">Welcome to CODIFY</h1>
+        <p class="mb-4 text-light">At CODIFY, we're not just a platform; we're a vibrant community sculpted by aspiring coders. Join us as we decode the future together, one project at a time.</p>
+        <p class="mb-4 text-light">Embark on a transformative coding odyssey with us, where passion meets precision, and every algorithm tells a story of empowerment.</p>
+        <div class="row gy-2 gx-4 mb-4">
+          <div class="col-sm-6">
+            <p class="mb-0 text-light"><i class="fa fa-arrow-right text-primary me-2"></i>Innovation</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0 text-light"><i class="fa fa-arrow-right text-primary me-2"></i>Collaboratio</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0 text-light"><i class="fa fa-arrow-right text-primary me-2"></i>Empowerment</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0 text-light"><i class="fa fa-arrow-right text-primary me-2"></i>Inspiration</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0 text-light"><i class="fa fa-arrow-right text-primary me-2"></i>Excellence</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0 text-light"><i class="fa fa-arrow-right text-primary me-2"></i>Diversity</p>
+          </div>
+        </div>
+        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+      </div>
+    </div>
   </div>
 </div>
 
+
 <!-- About Us End -->
+
+<!-- Project Album Start -->
+
+
+
+<!-- Project Album End -->
+
+
+ <!-- Footer Start -->
+ <section class="contact-area" id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+              <div class="contact-content text-center">
+                  <a href="#"><img src="/static/Logo.png" alt="logo"></a>
+                  <p>Coding Dreams into Reality with Codify </p>
+                  <div class="hr"></div>
+                  <h6>Red Gate Street, Ghaziabad 201005, Uttar Pradesh - India.</h6>
+                  <h6>+91 XXXXXXX<span>|</span>+91 XXXXXX</h6>
+                  <div class="contact-social">
+                      <ul>
+                          <li><a class="hover-target" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a class="hover-target" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                          <li><a class="hover-target" href="#"><i class="fab fa-github"></i></a></li>
+                          <li><a class="hover-target" href="#"><i class="fab fa-behance"></i></a></li>
+                          <li><a class="hover-target" href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<footer>
+  <p>Copyright &copy; 2023 <img src="/static/Logo.png" alt="logo"> All Rights Reserved.</p>
+</footer>
+<!-- Footer End -->
+
 
 
 {% endblock body %}
