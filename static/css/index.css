@@ -1,0 +1,176 @@
+.service-item {
+    background: lightblue;
+    transition: .5s;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.service-item:hover {
+    margin-top: -10px;
+    background: blue;
+}
+
+.service-item * {
+    transition: .5s;
+}
+
+.service-item:hover * {
+    color: white !important;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: var(--primary);
+    color: white;
+}
+
+.section-title::before,
+.section-title::after {
+    position: absolute;
+    content: "";
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title::before {
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+}
+
+.section-title::after {
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 5px;
+    left: -60px;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+.about-us-points {
+    color: white;
+}
+
+.about-us-points i {
+    color: var(--primary);
+    margin-right: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0;
+    /* min-height: 100vh;*/
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-area {
+    border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
+}
+
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
+}
+
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 10px;
+}
+
+.contact-social {
+    margin-top: 30px;
+}
+
+.contact-social>ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+.contact-social ul li a:hover {
+    border: 1px solid #FAB702;
+    color: #FAB702;
+}
+
+.contact-content img {
+    max-width: 210px;
+}
+
+section,
+footer {
+    background: #1A1E25;
+    color: #868c96;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+
+
+/* Add this to your existing CSS file or create a new one */
+
+.contact-social ul li a.hover-target {
+    color: white;
+}
+
+
+/* Optional: Change the hover color */
+
+.contact-social ul li a.hover-target:hover {
+    color: rgb(7, 234, 241);
+    /* or any other color you prefer */
+}

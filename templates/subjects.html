@@ -1,6 +1,14 @@
-{% extends "base.html" %}
-{% block title %}Subjects{% endblock title %}
+{% extends "base.html" %} 
+{% block Head %} 
+{% block title %}Subjects{% endblock title %} 
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock Head %} 
 
 {% block body %}
-
+<main class='text-container'>
+    <svg class="text-strokes" viewBox="0 0 500 100" width="80%" height="100%">
+      <text class="text" x="20" y="75">CODIFY</text>
+    </svg>
+</main>
+<button class="reset">Restart the Animation</button>
 {% endblock body %}
