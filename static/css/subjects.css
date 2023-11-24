@@ -1,20 +1,100 @@
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.project__container {
+    grid-gap: 2.5rem;
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 0.5px;
+    width: 300px;
 }
 
-.reset::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.project__item {
+    background: #9ca0a3;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    padding: .3rem;
+    transition: all .4s ease;
+    height: 300px;
+    /* Set a fixed height */
+}
+
+.project__item:hover {
+    border-color: rgba(77, 181, 255, .4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
+    -webkit-transform: perspective(500px) translateZ(30px);
+    transform: perspective(500px) translateZ(30px);
+}
+
+.project__item-image {
+    border-radius: 1.5rem;
+    object-fit: cover;
+    overflow: hidden;
+    height: 60%;
+    /* Adjusted height for the image */
+}
+
+.project__item h3 {
+    color: 2c2c6c;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.project__item-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    border: 1px solid #1f1f38;
+    border-radius: .4rem;
+    color: #1f1f38;
+    cursor: pointer;
+    display: inline-block;
+    padding: .75rem 1.2rem;
+    text-decoration: none;
+    transition: all .4s ease;
+    width: -webkit-max-content;
+    width: max-content;
+}
+
+.btn:hover {
+    background: #fff;
+    border-color: transparent;
+}
+
+.btn-primary {
+    background: #1f1f38;
+    color: #fff;
+}
+
+#img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .project__container {
+        gap: 1.2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project__container {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
 }
 
 body {
-    block-size: 100vh;
-    display: grid;
-    place-content: center;
-    gap: 1rem;
-    font-family: "Lato", sans-serif;
-    background-color: #efefef;
+    background-color: black;
+    color: white;
+}
+
+.black-background {
+    background-color: black;
+    color: white;
+    /* Set text color to white for better visibility on black background */
 }

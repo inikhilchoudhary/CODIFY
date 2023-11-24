@@ -3,10 +3,7 @@ from django.shortcuts import render,HttpResponse
 
 def index(request):
     #return HttpResponse("This is homepage")
-    context={
-        'variable':'this is sent'
-    }
-    return render(request,'index.html',context)
+    return render(request,'index.html')
 
 def subjects(request):
     #return HttpResponse("This is subjects page")

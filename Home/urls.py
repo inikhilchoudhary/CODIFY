@@ -1,13 +1,14 @@
+# urls.py
+
 from django.contrib import admin
 from django.urls import path
 from Home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("",views.index,name='Home'),
-    path("Subjects",views.subjects,name='Subjects'),
-    path("SourceCode",views.source_code,name='SourceCode'),
-    path("Contribute",views.contribute,name='Contribute'),
-    path("AboutUs",views.about_us,name='AboutUs'),
-
+    path("", views.index, name='home'),  # Assign the name 'home' to your home view
+    path("Subjects", views.subjects, name='subjects'),
+    path("SourceCode", views.source_code, name='source_code'),
+    path("Contribute", views.contribute, name='contribute'),
+    path("AboutUs", views.about_us, name='about_us'),
 ]

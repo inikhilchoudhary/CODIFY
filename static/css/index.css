@@ -144,33 +144,3 @@ ul {
 .contact-content img {
     max-width: 210px;
 }
-
-section,
-footer {
-    background: #1A1E25;
-    color: #868c96;
-}
-
-footer p {
-    padding: 40px 0;
-    text-align: center;
-}
-
-footer img {
-    width: 44px;
-}
-
-
-/* Add this to your existing CSS file or create a new one */
-
-.contact-social ul li a.hover-target {
-    color: white;
-}
-
-
-/* Optional: Change the hover color */
-
-.contact-social ul li a.hover-target:hover {
-    color: rgb(7, 234, 241);
-    /* or any other color you prefer */
-}

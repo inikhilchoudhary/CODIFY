@@ -1,14 +1,99 @@
 {% extends "base.html" %} 
-{% block Head %} 
-{% block title %}Subjects{% endblock title %} 
-<link rel="stylesheet" href="/static/css/index.css">
-{% endblock Head %} 
 
-{% block body %}
-<main class='text-container'>
-    <svg class="text-strokes" viewBox="0 0 500 100" width="80%" height="100%">
-      <text class="text" x="20" y="75">CODIFY</text>
-    </svg>
-</main>
-<button class="reset">Restart the Animation</button>
+{% block head %}
+
+{% block title %}{% endblock title %}
+<link rel="stylesheet" href="/static/css/subjects.css">
+
+
+
+
+
+{% endblock head %}
+
+
+{% block body %} 
+
+
+<!-- 1.Carousel Start -->
+<div class="carousel-inner mx-0">
+  <div class="carousel-item active">
+    <img src="/static/img/SubjectImg.png" class="d-block w-100" alt="..." style="width: 2600px; height: 200px;">
+    <div class="carousel-caption d-none d-md-flex flex-column align-items-center justify-content-center text-center">
+      <p>Unleash your coding creativity and bring your ideas to life with our inspiring Projects! 🚀✨.</p>
+    </div>
+  </div>
+</div>
+<!-- 1.Carousel End -->
+
+<!-- Card section start  -->
+<section id="project" class="black-background">
+  <div class="container project__container">
+      <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
+          <div class="project__item-image">
+              <img id="img" src="/static/img/carousel1.jpg" alt="Java">
+          </div>
+          <h3 style="font-family: &quot;Instagram Sans Bold&quot;;">Java</h3>
+          <div class="project__item-cta">
+              <a href="https://github.com/Vab31/qrcode.git" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: &quot;Instagram Sans Regular&quot;;">Download</a>
+          </div>
+      </article>
+      <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
+          <div class="project__item-image">
+              <img id="img" src="/static/img/carousel1.jpg" alt="Python">
+          </div>
+          <h3 style="font-family: &quot;Instagram Sans Bold&quot;;">Python</h3>
+          <div class="project__item-cta">
+              <a href="https://github.com/Vab31/qrcode.git" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: &quot;Instagram Sans Regular&quot;;">Download</a>
+          </div>
+      </article>
+      <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
+          <div class="project__item-image">
+              <img id="img" src="/static/img/carousel1.jpg" alt="C">
+          </div>
+          <h3 style="font-family: &quot;Instagram Sans Bold&quot;;">C</h3>
+          <div class="project__item-cta">
+              <a href="https://github.com/Vab31/qrcode.git" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: &quot;Instagram Sans Regular&quot;;">Download</a>
+          </div>
+      </article>
+      <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
+          <div class="project__item-image">
+              <img id="img" src="/static/img/carousel1.jpg" alt="C++">
+          </div>
+          <h3 style="font-family: &quot;Instagram Sans Bold&quot;;">C++</h3>
+          <div class="project__item-cta">
+              <a href="https://github.com/Vab31/qrcode.git" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: &quot;Instagram Sans Regular&quot;;">Download</a>
+          </div>
+      </article>
+      <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
+          <div class="project__item-image">
+              <img id="img" src="/static/img/carousel1.jpg" alt="Html">
+          </div>
+          <h3 style="font-family: &quot;Instagram Sans Bold&quot;;">Html</h3>
+          <div class="project__item-cta">
+              <a href="https://github.com/Vab31/qrcode.git" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: &quot;Instagram Sans Regular&quot;;">Download</a>
+          </div>
+      </article>
+      <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
+          <div class="project__item-image">
+              <img id="img" src="/static/img/carousel1.jpg" alt="CSS">
+          </div>
+          <h3 style="font-family: &quot;Instagram Sans Bold&quot;;">CSS</h3>
+          <div class="project__item-cta">
+              <a href="https://github.com/Vab31/qrcode.git" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: &quot;Instagram Sans Regular&quot;;">Download</a>
+          </div>
+      </article>
+
+      <!-- Repeat similar structure for other projects -->
+
+      
+  </div>
+</section>
+<!-- Card section end  -->
+
+  
+ 
+
+
 {% endblock body %}
+
