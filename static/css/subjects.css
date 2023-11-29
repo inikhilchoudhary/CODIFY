@@ -45,6 +45,7 @@ section .Courses .product {
     /* Initial box shadow for glow effect */
     transition: border 0.5s ease, box-shadow 0.5s ease;
     /* Transition for both border and box shadow */
+    margin: 15px;
 }
 
 @keyframes glow {
@@ -83,18 +84,56 @@ section .Courses .product:before {
 
 section .Courses .product img {
     width: 100%;
-    height: 200px;
+    height: 235px;
     object-fit: cover;
     cursor: pointer;
 }
 
 section .Courses .product .Courses-content {
     line-height: 22px;
+    position: relative;
 }
 
-section .Courses .product .Courses-content .name {
-    text-transform: capitalize;
-    font-weight: 700;
+section .Courses .product .Courses-content a.Download-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #0093E7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: -25px;
+    text-decoration: none;
+    /* Remove default underline for links */
+    display: inline-block;
+    /* Adjust display property for inline-block */
+}
+
+section .Courses .product .Courses-content a.Download-link:hover {
+    background-color: #0077cc;
+}
+
+section .Courses .product .Courses-content button.Download-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: #0093E7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: -25px;
+}
+
+section .Courses .product .Courses-content button.Download-link:hover {
+    background-color: #0077cc;
 }
 
 section .Courses h2 {
@@ -189,24 +228,6 @@ section .Carousel .Carousel-content .content-box button:hover {
 /*---- media queary min--750px & max--999px ----*/
 
 @media (min-width: 750px) and (max-width:999px) {
-    section .brands .carousel {
-        padding: 0px 50px;
-        padding-left: 60px;
-    }
-    section .brands .carousel .owl-nav {
-        padding: 0 50px;
-    }
-    section .card1 {
-        padding: 0 50px;
-        padding-bottom: 100px;
-    }
-    section .card1 .card1-box {
-        height: 350px;
-        padding: 30px 15px;
-    }
-    section .card1 .card1-box h3 {
-        font-size: 1em;
-    }
     section .Courses {
         padding: 100px 50px;
         padding-top: 200px;
@@ -222,25 +243,6 @@ section .Carousel .Carousel-content .content-box button:hover {
 /*---- media queary min--600px & max--749px ----*/
 
 @media (min-width: 600px) and (max-width:749px) {
-    section .brands .carousel {
-        padding: 0px 50px;
-        padding-left: 60px;
-    }
-    section .brands .carousel .owl-nav {
-        padding: 0 50px;
-    }
-    section .card1 {
-        padding: 0 50px;
-        padding-bottom: 100px;
-        grid-template-columns: auto auto;
-    }
-    section .card1 .card1-box {
-        height: 350px;
-        padding: 30px 15px;
-    }
-    section .card1 .card1-box h3 {
-        font-size: 1em;
-    }
     section .Courses {
         padding: 100px 50px;
         padding-top: 200px;
@@ -263,25 +265,6 @@ section .Carousel .Carousel-content .content-box button:hover {
 /*---- media queary min--0px & max--599px ----*/
 
 @media (min-width: 0px) and (max-width:599px) {
-    section .brands .carousel {
-        padding: 0px 15px;
-        padding-left: 15px;
-    }
-    section .brands .carousel .owl-nav {
-        padding: 0 10px;
-    }
-    section .card1 {
-        padding: 0 10px;
-        padding-bottom: 100px;
-        grid-template-columns: auto;
-    }
-    section .card1 .card1-box {
-        height: 480px;
-        padding: 30px 15px;
-    }
-    section .card1 .card1-box h3 {
-        font-size: 1.4em;
-    }
     section .Courses {
         padding: 100px 10px;
         padding-top: 200px;
@@ -319,15 +302,5 @@ section .Carousel {
     background: black;
     /* Change the background color to black */
     padding: 0px 100px;
-    padding-bottom: 100px;
-}
-
-section .card1 {
-    background: black;
-    /* Change the background color to black */
-    padding: 0 100px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
     padding-bottom: 100px;
 }

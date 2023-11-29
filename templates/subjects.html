@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <script src="{% static 'js/subjects.js' %}"></script>
+    <script src="{% static 'subjects.js' %}"></script>
 {% endblock head %}
 
 {% block body %} 
@@ -31,8 +31,10 @@
           <p class="Heading">
             Empowering coders with free source code and notes – welcome to Codify, where lines of code paint the future.
           </p>
-          <button>Explore More </button>
-      </div>
+          <a href="#courses">
+            <button>Explore More</button>
+        </a>
+        </div>
   </div>
 </div>
 <!---- Welcom Codify End---->
@@ -42,44 +44,62 @@
 <!---- Subjects Card Start---->
  
  
- <div class="Courses">
-   <h2>Courses</h2>
-   <div class="product">
-     <img src="/static/img/Subjects/Python.png" class="product-photo">     
-     <div class="Courses-content">
-       <p class="name">
-         Python
-       </p>
-      </div>
+<div class="Courses" id="courses">
+   <h2>COURSES</h2>
+  <div class="product">
+    <img src="/static/img/Subjects/Python.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/ZrNC3ZCB#Zd_3D5KtatgouemT5ThYZQ" target="_blank" class="Download-link">Download</a>
     </div>
-   <div class="product">
-     <img src="/static/img/Subjects/Java.png" id="sheochange">
-     <div class="Courses-content">
-       <p class="name">
-         Java
-       </p>
-      </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/Java.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/4mc3DD6Z#jNng01cGC0scxE1HgwO_5A" target="_blank" class="Download-link">Download</a>
     </div>
-   <div class="product">
-     <img src="/static/img/Subjects/C.png">
-     
-    <i class="fa fa-shopping-basket basket"></i>
-     <div class="Courses-content">
-       <p class="name">
-         C
-       </p>
-      </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/C.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/42dVTaZY#01JrA5RgYbWXHlYwvv0PrQ" target="_blank" class="Download-link">Download</a>
     </div>
-   <div class="product">
-     <img src="/static/img/Subjects/C++.jpg">     
-     <div class="Courses-content">
-       <p class="name">
-         C++
-       </p>
-      </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/C++.jpeg" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/c38BCTrL#YS7zMej-x64XcdztwygTzw" target="_blank" class="Download-link">Download</a>
     </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/Html.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/Bjl2yC5b#GH95UK7uWhaaZDTK26Eyiw" target="_blank" class="Download-link">Download</a>
+    </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/Css.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/drsxWaRZ#ENt6OEQYH0XVDbiTKQGFVw" target="_blank" class="Download-link">Download</a>
+    </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/JavaScript.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/FiFlARLJ#FZ7_7amO8JVZjk0fCsJTNQQ" target="_blank" class="Download-link">Download</a>
+    </div>
+  </div>
+  <div class="product">
+    <img src="/static/img/Subjects/Oop.png" class="product-photo">     
+    <div class="Courses-content">
+      <a href="https://mega.nz/folder/I20xERTQ#EHAb2RNtA72Qn5B8PPeaGw" target="_blank" class="Download-link">Download</a>
+    </div>
+  </div>
+</div>
+  
+  </div>
    
 <!---- Subjects Card End---->
 
 </section>
+
 {% endblock body %}

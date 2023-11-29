@@ -1,20 +1,9 @@
 {% extends "base.html" %} 
-
 {% block head %}
-
 {% block title %}{% endblock title %}
 <link rel="stylesheet" href="/static/css/index.css">
-
-
-
-
-
 {% endblock head %}
-
-
 {% block body %} 
-
-
 <!-- 1.Carousel Start -->
 <div class="container-fluid">
     <div id="carouselExampleCaptions" class="carousel slide">
@@ -61,44 +50,52 @@
 <!-- Service Start -->
 <div class="container-xxl py-5">
   <div class="container">
-      <div class="row g-4">
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-              <div class="service-item text-center pt-3">
-                  <div class="p-4">
-                      <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                      <h5 class="mb-3">Skilled</h5>
-                      <p>🚀 Elevate your coding game in our Skill section! 🌟</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-              <div class="service-item text-center pt-3">
-                  <div class="p-4">
-                      <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                      <h5 class="mb-3">Source Codes</h5>
-                      <p>Unlock the source of innovation with our Source Code section! 🧠💻</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div class="service-item text-center pt-3">
-                  <div class="p-4">
-                      <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                      <h5 class="mb-3">Projects</h5>
-                      <p>Embark on coding adventures with our Projects! 🚀✨</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div class="service-item text-center pt-3">
-                  <div class="p-4">
-                      <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                      <h5 class="mb-3">Notes</h5>
-                      <p>Dive into wisdom with our Notes section! 📚✍️</p>
-                  </div>
-              </div>
-          </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <form action="/Subjects" method="get">
+          <button type="submit" class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+              <h5 class="mb-3">Skilled</h5>
+              <p>🚀 Elevate your coding game in our Skill section! 🌟</p>
+            </div>
+          </button>
+        </form>
       </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <form action="/SourceCode" method="get">
+          <button type="submit" class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+              <h5 class="mb-3">Source Codes</h5>
+              <p>Unlock the source of innovation with our Source Code section! 🧠💻</p>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <form action="/SourceCode" method="get">
+          <button type="submit" class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-home text-primary mb-4"></i>
+              <h5 class="mb-3">Projects</h5>
+              <p>Embark on coding adventures with our Projects! 🚀✨</p>
+            </div>
+          </button>
+        </form>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        <form action="/Subjects" method="get">
+          <button type="submit" class="service-item text-center pt-3">
+            <div class="p-4">
+              <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+              <h5 class="mb-3">Notes</h5>
+              <p>Dive into wisdom with our Notes section! 📚✍️</p>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 <!-- Service End -->
@@ -143,14 +140,4 @@
   </div>
 </div>
 <!-- About Us End -->
-
-<!-- Project Album Start -->
-
-
-
-<!-- Project Album End -->
-
- 
-
-
 {% endblock body %}

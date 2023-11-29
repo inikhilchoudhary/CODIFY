@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,6 +62,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="your-bootstrap-integrity-code" crossorigin="anonymous"></script>
 
+{% block footer %}
 <!-- Footer Start -->
 <section class="contact-area" id="contact">
     <div class="container">
@@ -74,9 +76,9 @@
                     <h6>+91 XXXXXXX<span>|</span>+91 XXXXXX</h6>
                     <div class="contact-social">
                         <ul>
-                            <li><a class="hover-target" href="#"><i class="fab fa-github"></i></a></li>
+                            <li><a class="hover-target" href="https://github.com/icodify"><i class="fab fa-github"></i></a></li>
                             <li><a class="hover-target" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a class="hover-target" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="hover-target" href="https://www.linkedin.com/in/thecodify/"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -89,6 +91,7 @@
     <p>Copyright &copy; 2023 <img src="/static/img/Codify/LogoFtr.png" alt="logo"> All Rights Reserved.</p>
 </footer>
 <!-- Footer End -->
+{% endblock footer %}
 
 </body>
 </html>
