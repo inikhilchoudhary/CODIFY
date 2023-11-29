@@ -6,7 +6,7 @@
     overflow: hidden;
 }
 
-.service-item:hover {
+z .service-item:hover {
     margin-top: -10px;
     background: blue;
 }

@@ -1,130 +1,85 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
+
+{% block title %}Subjects | {% endblock title %}
 
 {% block head %}
-
-{% block title %}{% endblock title %}
-<link rel="stylesheet" href="/static/css/subjects.css">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-
-
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/subjects.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="{% static 'js/subjects.js' %}"></script>
 {% endblock head %}
 
-
 {% block body %} 
-
-
-
-<!-- Codify Smoke  start  -->
-
 <section>
-    <video src="smoke.mp4" autoplay muted ></video>
-    <h1>
-        <span>C</span>
-        <span>O</span>
-        <span>D</span>
-        <span>I</span>
-        <span>F</span>
-        <span>Y</span>
-    </h1>
-</section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<!-- Codify Smoke  End  -->
+<!---- Welcome Codify---->
+<div class="Carousel" style="background-image: url('path_to_your_books_image.jpg');">
+  <div class="Carousel-content">
+      <div class="content-box">
+          <p class="Heading">
+              Hey Coders :)
+          </p>
+          <h3>
+              Welcome To Codify
+          </h3>
+          <p class="content">
+            Welcome to Codify, your ultimate coding sanctuary! Explore a world of possibilities with our curated collection of free source code and comprehensive coding notes.
+          </p>
+          <p class="Heading">
+            Empowering coders with free source code and notes – welcome to Codify, where lines of code paint the future.
+          </p>
+          <button>Explore More </button>
+      </div>
+  </div>
+</div>
+<!---- Welcom Codify End---->
 
 
-<!-- Card section start  -->
 
-<section id="project">
-    <div class="container project__container">
-        <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
-            <div class="project__item-image">
-                <img id="img" src="/static/img/Subjects/Python.png" alt="Pyhton">
-            </div>
-            <h3 style="font-family: 'Instagram Sans Bold';">Python</h3>
-            <div class="project__item-cta">
-                <a href="https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: 'Instagram Sans Regular';">Download</a>
-            </div>
-        </article>
-        <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
-            <div class="project__item-image">
-                <img id="img" src="/static/img/Subjects/Java.png" alt="Java">
-            </div>
-            <h3 style="font-family: 'Instagram Sans Bold';">Java</h3>
-            <div class="project__item-cta">
-                <a href="https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: 'Instagram Sans Regular';">Download</a>
-            </div>
-        </article>
-        <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
-            <div class="project__item-image">
-                <img id="img" src="/static/img/Subjects/C.png" alt="C">
-            </div>
-            <h3 style="font-family: 'Instagram Sans Bold';">C</h3>
-            <div class="project__item-cta">
-                <a href="https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: 'Instagram Sans Regular';">Download</a>
-            </div>
-        </article>
-        <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
-            <div class="project__item-image">
-                <img id="img" src="/static/img/Subjects/C++.jpg" alt="C++">
-            </div>
-            <h3 style="font-family: 'Instagram Sans Bold';">C++</h3>
-            <div class="project__item-cta">
-                <a href="https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: 'Instagram Sans Regular';">Download</a>
-            </div>
-        </article>
-        <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
-            <div class="project__item-image">
-                <img id="img" src="/static/img/Subjects/Html.png" alt="Html">
-            </div>
-            <h3 style="font-family: 'Instagram Sans Bold';">Html</h3>
-            <div class="project__item-cta">
-                <a href="https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: 'Instagram Sans Regular';">Download</a>
-            </div>
-        </article>
-        <article class="project__item aos-init aos-animate" data-aos="zoom-in-up">
-            <div class="project__item-image">
-                <img id="img" src="/static/img/Subjects/Css.png" alt="CSS">
-            </div>
-            <h3 style="font-family: 'Instagram Sans Bold';">CSS</h3>
-            <div class="project__item-cta">
-                <a href="https://drive.google.com/file/d/1e8LVkzRbexmDwT69b_cG5CX7chYGaJ5Y/view?usp=drive_link" class="btn btn-primary" target="_blank" rel="noreferrer" style="font-family: 'Instagram Sans Regular';">Download</a>
-            </div>
-        </article>
-
-        <!-- Add more articles following the same pattern for additional projects -->
-
-    </div>
-</section>
-
-
-<!-- Card section end  -->
-
-  
+<!---- Subjects Card Start---->
  
+ 
+ <div class="Courses">
+   <h2>Courses</h2>
+   <div class="product">
+     <img src="/static/img/Subjects/Python.png" class="product-photo">     
+     <div class="Courses-content">
+       <p class="name">
+         Python
+       </p>
+      </div>
+    </div>
+   <div class="product">
+     <img src="/static/img/Subjects/Java.png" id="sheochange">
+     <div class="Courses-content">
+       <p class="name">
+         Java
+       </p>
+      </div>
+    </div>
+   <div class="product">
+     <img src="/static/img/Subjects/C.png">
+     
+    <i class="fa fa-shopping-basket basket"></i>
+     <div class="Courses-content">
+       <p class="name">
+         C
+       </p>
+      </div>
+    </div>
+   <div class="product">
+     <img src="/static/img/Subjects/C++.jpg">     
+     <div class="Courses-content">
+       <p class="name">
+         C++
+       </p>
+      </div>
+    </div>
+   
+<!---- Subjects Card End---->
 
-
+</section>
 {% endblock body %}
-
