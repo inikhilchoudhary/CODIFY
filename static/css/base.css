@@ -6,10 +6,28 @@ body {
     background-color: black;
 }
 
+
+/* Navbar Styles */
+
+.navbar-collapse {
+    text-align: center;
+}
+
+.navbar-nav {
+    margin-top: 10px;
+    /* Adjust spacing for smaller screens */
+}
+
+
+/* Contact Area and Footer Styles */
+
 .contact-area,
 footer {
     margin-top: auto;
 }
+
+
+/* Section and Footer Styles */
 
 section,
 footer {
@@ -17,11 +35,29 @@ footer {
     color: #868c96;
 }
 
+
+/* Footer Text Styles */
+
 footer p {
-    padding: 40px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
+
+/* Footer Image Styles */
+
 footer img {
     width: 100px;
+    height: auto;
+}
+
+
+/* Media Queries for Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Adjust other styles for smaller screens */
+    /* For example, you might adjust padding, margins, or font sizes */
 }

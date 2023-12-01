@@ -1,3 +1,5 @@
+/* Original CSS code remains unchanged */
+
 .service-item {
     background: lightblue;
     transition: .5s;
@@ -6,7 +8,7 @@
     overflow: hidden;
 }
 
-z .service-item:hover {
+.service-item:hover {
     margin-top: -10px;
     background: blue;
 }
@@ -74,8 +76,7 @@ img {
 }
 
 section {
-    padding: 60px 0;
-    /* min-height: 100vh;*/
+    padding: 0px 0;
 }
 
 ul {
@@ -90,8 +91,8 @@ ul {
 
 .contact-content p {
     font-size: 15px;
-    margin: 30px 0 60px;
-    position: relative;
+    margin: -66px 0 10px;
+    position: center;
 }
 
 .contact-content p::after {
@@ -142,5 +143,58 @@ ul {
 }
 
 .contact-content img {
-    max-width: 210px;
+    max-width: 200px;
+}
+
+
+/* Responsive adjustments */
+
+
+/* Service Items for smaller screens */
+
+@media only screen and (max-width: 768px) {
+    .service-item {
+        height: auto;
+        border-radius: 0;
+        overflow: visible;
+    }
+    .service-item:hover {
+        margin-top: 0;
+    }
+    .service-item * {
+        color: initial !important;
+    }
+}
+
+
+/* Section Titles for smaller screens */
+
+@media only screen and (max-width: 768px) {
+    .section-title::before {
+        width: 100%;
+        left: 0;
+    }
+    .section-title::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+
+/* Contact Area for smaller screens */
+
+@media only screen and (max-width: 768px) {
+    .contact-content p {
+        font-size: 14px;
+        margin: -56px 0 10px;
+    }
+    .contact-content h6 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .contact-social ul li a {
+        height: 30px;
+        width: 30px;
+        padding-top: 5px;
+    }
 }

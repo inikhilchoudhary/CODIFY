@@ -1,0 +1,21 @@
+/* Add any additional styles if needed */
+
+
+/* Style for the buttons */
+
+.btn-outline-light {
+    color: black;
+    /* Text color */
+    border-color: white;
+    background-color: white;
+    /* Background color */
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+    color: white;
+    /* Change text color on hover/focus */
+    background-color: black;
+    /* Change background color on hover/focus */
+    border-color: white;
+}

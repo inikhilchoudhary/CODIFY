@@ -1,306 +1,296 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    transition: all .1s;
-    user-select: none;
-}
-
-
-/*--color shotcut--*/
-
- :root {
-    --black: #000;
-    --white: #fff;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-}
-
-
-/*--- section code----*/
-
-section .Courses {
-    background: black;
-    /* Change the background color to black */
-    padding: 100px 100px 100px 100px;
-    /* Add padding to the bottom */
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    position: relative;
-}
-
-section .Courses .product {
-    height: 250px;
-    width: 250px;
-    position: relative;
-    border: 2px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 147, 231, 0.5);
-    /* Initial box shadow for glow effect */
-    transition: border 0.5s ease, box-shadow 0.5s ease;
-    /* Transition for both border and box shadow */
-    margin: 15px;
-}
-
-@keyframes glow {
-    0% {
-        border-color: #0093E7;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        transition: all .1s;
+        user-select: none;
+    }
+    /*--color shotcut--*/
+    
+     :root {
+        --black: #000;
+        --white: #fff;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+    }
+    /*--- section code----*/
+    
+    section .Courses {
+        background: black;
+        /* Change the background color to black */
+        padding: 100px 100px 100px 100px;
+        /* Add padding to the bottom */
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        position: relative;
+    }
+    
+    section .Courses .product {
+        height: 250px;
+        width: 250px;
+        position: relative;
+        border: 2px;
+        border-radius: 15px;
         box-shadow: 0 0 10px rgba(0, 147, 231, 0.5);
+        /* Initial box shadow for glow effect */
+        transition: border 0.5s ease, box-shadow 0.5s ease;
+        /* Transition for both border and box shadow */
+        margin: 15px;
     }
-    50% {
-        border-color: #0093E7;
-        box-shadow: 0 0 20px rgba(0, 147, 231, 0.8);
+    
+    @keyframes glow {
+        0% {
+            border-color: #0093E7;
+            box-shadow: 0 0 10px rgba(0, 147, 231, 0.5);
+        }
+        50% {
+            border-color: #0093E7;
+            box-shadow: 0 0 20px rgba(0, 147, 231, 0.8);
+        }
+        100% {
+            border-color: #0093E7;
+            box-shadow: 0 0 10px rgba(0, 147, 231, 0.5);
+        }
     }
-    100% {
-        border-color: #0093E7;
-        box-shadow: 0 0 10px rgba(0, 147, 231, 0.5);
+    
+    section .Courses .product:hover {
+        animation: glow 1.5s infinite;
+        /* Apply the glow animation on hover */
     }
-}
-
-section .Courses .product:hover {
-    animation: glow 1.5s infinite;
-    /* Apply the glow animation on hover */
-}
-
-section .Courses .product:focus {
-    outline: none;
-}
-
-section .Courses .product:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .45);
-}
-
-section .Courses .product img {
-    width: 100%;
-    height: 235px;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-section .Courses .product .Courses-content {
-    line-height: 22px;
-    position: relative;
-}
-
-section .Courses .product .Courses-content a.Download-link {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 10px;
-    background-color: #0093E7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: -25px;
-    text-decoration: none;
-    /* Remove default underline for links */
-    display: inline-block;
-    /* Adjust display property for inline-block */
-}
-
-section .Courses .product .Courses-content a.Download-link:hover {
-    background-color: #0077cc;
-}
-
-section .Courses .product .Courses-content button.Download-link {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 10px;
-    background-color: #0093E7;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-bottom: -25px;
-}
-
-section .Courses .product .Courses-content button.Download-link:hover {
-    background-color: #0077cc;
-}
-
-section .Courses h2 {
-    position: absolute;
-    top: 10px;
-    /* Adjust the top position as needed */
-    left: 50%;
-    transform: translate(-50%, 0);
-    font-size: 2.5em;
-    padding: 10px 0;
-}
-
-section .Courses h2:after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -2px;
-    transform: translate(-50%, 0);
-    width: 100px;
-    height: 1px;
-    background: #0093E7;
-}
-
-section .Carousel {
-    background: #eee;
-    padding: 0px 100px;
-    padding-bottom: 100px;
-}
-
-section .Carousel .Carousel-content {
-    background: url('/static/img/Subjects/SubCor.jpg');
-    background-size: fill;
-    background-position: 70%;
-    background-attachment: fixed;
-    height: 400px;
-    position: relative;
-    border-radius: 15px;
-}
-
-section .Carousel .Carousel-content .content-box {
-    color: var(--white);
-    width: 500px;
-    position: absolute;
-    left: 50px;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-section .Carousel .Carousel-content:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 125, 196, .3);
-}
-
-section .Carousel .Carousel-content .content-box .Heading {
-    font-size: .95em;
-    margin: 10px 0;
-}
-
-section .Carousel .Carousel-content .content-box h3 {
-    font-size: 2.4em;
-    margin-bottom: 10px;
-}
-
-section .Carousel .Carousel-content .content-box .content {
-    font-size: .85em;
-}
-
-section .Carousel .Carousel-content .content-box button {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    margin-top: 25px;
-    font-weight: 700;
-    font-size: 1.1em;
-    background: var(--white);
-    cursor: pointer;
-    transition: all .3s;
-}
-
-section .Carousel .Carousel-content .content-box button:hover {
-    background: var(--black);
-    color: var(--white);
-}
-
-
-/*---- media queary min--750px & max--999px ----*/
-
-@media (min-width: 750px) and (max-width:999px) {
-    section .Courses {
-        padding: 100px 50px;
-        padding-top: 200px;
-        grid-template-columns: auto auto auto;
+    
+    section .Courses .product:focus {
+        outline: none;
     }
-    section .Carousel {
-        padding: 0px 50px;
-        padding-bottom: 100px;
+    
+    section .Courses .product:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .45);
     }
-}
-
-
-/*---- media queary min--600px & max--749px ----*/
-
-@media (min-width: 600px) and (max-width:749px) {
-    section .Courses {
-        padding: 100px 50px;
-        padding-top: 200px;
-        grid-template-columns: auto auto;
-    }
-    section .Courses h2 {
-        font-size: 2.2em;
-    }
-    section .Carousel {
-        padding: 0px 50px;
-        padding-bottom: 100px;
-    }
-    section .Carousel .Carousel-content .content-box {
-        left: 30px;
-        width: 85%;
-    }
-}
-
-
-/*---- media queary min--0px & max--599px ----*/
-
-@media (min-width: 0px) and (max-width:599px) {
-    section .Courses {
-        padding: 100px 10px;
-        padding-top: 200px;
-        grid-template-columns: auto auto;
-    }
+    
     section .Courses .product img {
-        height: 150px;
+        width: 100%;
+        height: 235px;
+        object-fit: cover;
+        cursor: pointer;
     }
+    
+    section .Courses .product .Courses-content {
+        line-height: 22px;
+        position: relative;
+    }
+    
+    section .Courses .product .Courses-content a.Download-link {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: #0093E7;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: -25px;
+        text-decoration: none;
+        /* Remove default underline for links */
+        display: inline-block;
+        /* Adjust display property for inline-block */
+    }
+    
+    section .Courses .product .Courses-content a.Download-link:hover {
+        background-color: #0077cc;
+    }
+    
+    section .Courses .product .Courses-content button.Download-link {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 5px 10px;
+        background-color: #0093E7;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-bottom: -25px;
+    }
+    
+    section .Courses .product .Courses-content button.Download-link:hover {
+        background-color: #0077cc;
+    }
+    
     section .Courses h2 {
-        font-size: 1.2em;
-        text-align: center;
+        position: absolute;
+        top: 10px;
+        /* Adjust the top position as needed */
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 2.5em;
+        padding: 10px 0;
     }
+    
+    section .Courses h2:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+        transform: translate(-50%, 0);
+        width: 100px;
+        height: 1px;
+        background: #0093E7;
+    }
+    
     section .Carousel {
-        padding: 0px 10px;
+        background: #eee;
+        padding: 0px 100px;
         padding-bottom: 100px;
     }
-    section .Carousel .Carousel-content .content-box {
-        left: 20px;
-        width: 85%;
+    
+    section .Carousel .Carousel-content {
+        background: url('/static/img/Subjects/SubCor.jpg');
+        background-size: fill;
+        background-position: 70%;
+        background-attachment: fixed;
+        height: 400px;
+        position: relative;
+        border-radius: 15px;
     }
-}
-
-section .Courses {
-    background: black;
-    /* Change the background color to black */
-    padding: 100px 100px;
-    padding-top: 200px;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;
-    position: relative;
-}
-
-section .Carousel {
-    background: black;
-    /* Change the background color to black */
-    padding: 0px 100px;
-    padding-bottom: 100px;
-}
+    
+    section .Carousel .Carousel-content .content-box {
+        color: var(--white);
+        width: 500px;
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    section .Carousel .Carousel-content:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 125, 196, .3);
+    }
+    
+    section .Carousel .Carousel-content .content-box .Heading {
+        font-size: .95em;
+        margin: 10px 0;
+    }
+    
+    section .Carousel .Carousel-content .content-box h3 {
+        font-size: 2.4em;
+        margin-bottom: 10px;
+    }
+    
+    section .Carousel .Carousel-content .content-box .content {
+        font-size: .85em;
+    }
+    
+    section .Carousel .Carousel-content .content-box button {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 1.1em;
+        background: var(--white);
+        cursor: pointer;
+        transition: all .3s;
+    }
+    
+    section .Carousel .Carousel-content .content-box button:hover {
+        background: var(--black);
+        color: var(--white);
+    }
+    /*---- media queary min--750px & max--999px ----*/
+    
+    @media (min-width: 750px) and (max-width:999px) {
+        section .Courses {
+            padding: 100px 50px;
+            padding-top: 200px;
+            grid-template-columns: auto auto auto;
+        }
+        section .Carousel {
+            padding: 0px 50px;
+            padding-bottom: 100px;
+        }
+    }
+    /*---- media queary min--600px & max--749px ----*/
+    
+    @media (min-width: 600px) and (max-width:749px) {
+        section .Courses {
+            padding: 100px 50px;
+            padding-top: 200px;
+            grid-template-columns: auto auto;
+        }
+        section .Courses h2 {
+            font-size: 2.2em;
+        }
+        section .Carousel {
+            padding: 0px 50px;
+            padding-bottom: 100px;
+        }
+        section .Carousel .Carousel-content .content-box {
+            left: 30px;
+            width: 85%;
+        }
+    }
+    /*---- media queary min--0px & max--599px ----*/
+    
+    @media (min-width: 0px) and (max-width:599px) {
+        section .Courses {
+            padding: 100px 10px;
+            padding-top: 200px;
+            grid-template-columns: auto auto;
+        }
+        section .Courses .product img {
+            height: 150px;
+        }
+        section .Courses h2 {
+            font-size: 1.2em;
+            text-align: center;
+        }
+        section .Carousel {
+            padding: 0px 10px;
+            padding-bottom: 100px;
+        }
+        section .Carousel .Carousel-content .content-box {
+            left: 20px;
+            width: 85%;
+        }
+    }
+    
+    section .Courses {
+        background: black;
+        /* Change the background color to black */
+        padding: 100px 100px;
+        padding-top: 200px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        position: relative;
+    }
+    
+    section .Carousel {
+        background: black;
+        /* Change the background color to black */
+        padding: 0px 100px;
+        padding-bottom: 100px;
+    }
