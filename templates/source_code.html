@@ -1,58 +1,88 @@
-{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Source Code | {% endblock title %}
-
-{% block head %}
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/sourcecode.css' %}">
-    <script src="{% static 'sourcecode.js' %}"></script>
-    <!-- Include additional styles or scripts if needed -->
+<head>
+    <meta charset="UTF-8">
+    <title>3D Carousel</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-{% endblock head %}
+    <link rel="stylesheet" href="/static/css/sourcecode.css">
+    
+</head>
 
-{% block body %} 
-
-
-<div>
+<body>
     <div class="carousel">
         <a class="carousel-item" href="#one!">
             <div class="testi card blue">
                 <div class="img-area">
-                    <img src="/static/img/Codify/Codify.png">
+                    <img src="/static/img/Subjects/WebD.png" alt="HTML">
                 </div>
                 <div class="card-content white-text">
-                    <h3>HTML</h3>
+                    <h3>WEB DEVELOPMENT</h3>
                 </div>
             </div>
         </a>
-        <a class="carousel-item" href="#two!">
+        <a class="carousel-item" href="#one!">
             <div class="testi card blue">
                 <div class="img-area">
-                    <img src="/static/img/Codify/Codify.png">
+                    <img src="/static/img/Subjects/Java.png" alt="JAVA">                
                 </div>
                 <div class="card-content white-text">
-                    <h3>CSS</h3>
+                    <h3>JAVA</h3>
                 </div>
             </div>
         </a>
-        <a class="carousel-item" href="#three!">
+        <a class="carousel-item" href="#one!">
             <div class="testi card blue">
                 <div class="img-area">
-                    <img src="/static/img/Codify/Codify.png">
+                    <img src="/static/img/Subjects/C++.jpeg" alt="C++">                
                 </div>
                 <div class="card-content white-text">
-                    <h3>CSS</h3>
+                    <h3>C++</h3>
                 </div>
             </div>
         </a>
-</div>
+        <a class="carousel-item" href="#one!">
+            <div class="testi card blue">
+                <div class="img-area">
+                    <img src="/static/img/Subjects/JavaScript.png" alt="JAVASCRIPT">                
+                </div>
+                <div class="card-content white-text">
+                    <h3>JAVASCRIPT</h3>
+                </div>
+            </div>
+        </a>
+        <a class="carousel-item" href="#one!">
+            <div class="testi card blue">
+                <div class="img-area">
+                    <img src="/static/img/Subjects/Cloud.png" alt="CLOUD">                
+                </div>
+                <div class="card-content white-text">
+                    <h3>CLOUD</h3>
+                </div>
+            </div>
+        </a>
+        <a class="carousel-item" href="#one!">
+            <div class="testi card blue">
+                <div class="img-area">
+                    <img src="/static/img/Subjects/Php.png" alt="PHP">                
+                </div>
+                <div class="card-content white-text">
+                    <h3>PHP</h3>
+                </div>
+            </div>
+        </a>
+        <!-- Add more carousel items as needed -->
+    </div>
 
-        <div class="carousel-buttons">
-            <button class="carousel-prev">&lt;</button>
-            <button class="carousel-next">&gt;</button>
-        </div>
-</div>
+    <div class="carousel-buttons">
+        <button class="carousel-prev">&lt;</button>
+        <button class="carousel-next">&gt;</button>
+    </div>
 
-        {% block section %}{% endblock section %}
-        {% block footer %}{% endblock footer %}
-        {% endblock body %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/static/css/sourcecode.js"></script>
+    
+</body>
+
+</html>

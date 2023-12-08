@@ -5,7 +5,7 @@ body {
 }
 
 .carousel {
-    height: 400px;
+    height: 600px;
     perspective: 250px;
 }
 
@@ -38,6 +38,8 @@ body {
 
 .img-area img {
     width: 100%;
+    margin-top: 2px;
+    padding: 18px;
 }
 
 .testi h3 {
@@ -50,7 +52,7 @@ body {
 .carousel-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,4 +73,9 @@ body {
 .carousel-buttons button:hover {
     background-color: #ce3434;
     color: #fff;
+}
+
+.card {
+    position: relative;
+    margin: -0.5rem 0 0rem 0;
 }
