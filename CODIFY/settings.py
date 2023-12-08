@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-x5sv&&61n%8orv3a868+cfr!&pa91xw+g^wbsy0p#9q!j(+rxd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['wecodify.live', 'www.codify.live','127.0.0.1']
+
 
 
 # Application definition
