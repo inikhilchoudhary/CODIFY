@@ -95,7 +95,7 @@ a:hover {
 .card .primary-heading {
     text-align: center;
     font-family: josefin sans;
-    color: white;
+    color: rgb(5, 5, 5);
     padding-top: 50px;
     font-size: 4em;
 }
@@ -113,7 +113,7 @@ a:hover {
 
 .bold {
     font-weight: 700;
-    color: white;
+    color: rgb(245, 3, 3);
 }
 
 .footer-heading {

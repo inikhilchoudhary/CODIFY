@@ -31,7 +31,6 @@ def contact(request):
         message=request.POST.get('message')
         #datetime.today()
         contact=Contact(name=name,email=email,message=message,date=datetime.today())
-        contact.save()
         
     #return HttpResponse("This is Contact Us page")
     return render(request,'contact.html')
