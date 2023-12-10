@@ -10,8 +10,33 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CODIFY</a>
+
+            <!-- Use ml-auto class to push the links to the right -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/SourceCode">Source Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Contribute">Internship</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Subjects">Subjects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/AboutUs">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="carousel">
-        <a class="carousel-item" href="#one!">
+        <a class="carousel-item" href="/Projects">
             <div class="testi card blue">
                 <div class="img-area">
                     <img src="/static/img/Subjects/WebD.png" alt="HTML">
@@ -77,6 +102,7 @@
     <div class="carousel-buttons">
         <button class="carousel-prev">&lt;</button>
         <button class="carousel-next">&gt;</button>
+        
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

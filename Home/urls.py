@@ -14,4 +14,6 @@ urlpatterns = [
     path("Contact", views.contact, name='contact'),
     path("TermsAndCondition", views.tandc, name='tandc'),
     path("PrivacyAndPolicy", views.privacyandpolicy, name='privacyandpolicy'),
+    path("Projects", views.projects, name='projects'),
+    
 ]

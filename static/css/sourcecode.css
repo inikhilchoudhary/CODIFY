@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #000;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
 }
 
 .carousel {
@@ -52,11 +54,8 @@ body {
 .carousel-buttons {
     display: flex;
     justify-content: center;
-    margin-top: -50px;
-    display: flex;
-    justify-content: center;
+    margin-top: -90px;
     align-items: center;
-    margin-top: 20px;
 }
 
 .carousel-buttons button {
@@ -78,4 +77,25 @@ body {
 .card {
     position: relative;
     margin: -0.5rem 0 0rem 0;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+nav {
+    color: #fff;
+    background-color: #070606;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+}
+
+ul:not(.browser-default) {
+    padding-left: 556px;
+    list-style-type: none;
+}
+
+nav ul {
+    margin: -46px;
 }

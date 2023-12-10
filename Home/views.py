@@ -1,5 +1,6 @@
 from django.shortcuts import render,HttpResponse
 from datetime import datetime
+
 from Home.models import Contact
 
 def index(request):
@@ -42,4 +43,8 @@ def tandc(request):
 def privacyandpolicy(request):
     #return HttpResponse("This is Privacy and Policy page")
     return render(request,'privacyandpolicy.html')
+
+def projects(request):
+    #return HttpResponse("This is Privacy and Policy page")
+    return render(request,'projects.html')
 

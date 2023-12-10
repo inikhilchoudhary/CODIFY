@@ -3,49 +3,58 @@
 
 {% block head %}
     {% load static %}
-    <link rel="stylesheet" href="/static/css/contribute.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    
-    
+    <link rel="stylesheet" href="{% static 'css/contribute.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/369c45c001.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/contribute.js' %}"></script>
+
 {% endblock head %}
 
-{% block body %} 
+{% block body %}
 
-<body class="bg-black">
-        
-    <div class="stars">
-        <div class="central-body">
-            <img class="image-404" src="http://salehriaz.com/404Page/img/404.svg" width="300px">
-            <a href="#" class="btn-go-home" target="_blank">GO BACK HOME</a>
-        </div>
-        <div class="objects">
-            <img class="object_rocket" src="http://salehriaz.com/404Page/img/rocket.svg" width="40px">
-            <div class="earth-moon">
-                <img class="object_earth" src="http://salehriaz.com/404Page/img/earth.svg" width="100px">
-                <img class="object_moon" src="http://salehriaz.com/404Page/img/moon.svg" width="80px">
+    <div class="content">
+        <div class="section2">
+            <div class="features">
+                <div class="tile access">
+                    <img src="https://cdn.icon-icons.com/icons2/664/PNG/512/construction_project_plan_building_architect_design_develop-53_icon-icons.com_60217.png" alt="access icon">
+                    <h3>Elevating Ideas into Innovative Projects</h3>
+                    <p>Unleash your coding potential with Codify Projects where ideas come to life through hands-on coding experiences.</p>
+                </div>
+                <div class="tile security">
+                    <img src="https://cdn.icon-icons.com/icons2/1537/PNG/512/1562687-code-computer-creative-html-process-technology-web-development_107058.png" alt="security icon">
+                    <h3>Dive into the realm of coding with Codify Source Code</h3>
+                    <p>A treasure trove of practical solutions and insights for every coding enthusiast.</p>
+                </div>
+                <div class="tile real-time">
+                    <img src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-collaboration.svg" alt="clock icon">
+                    <h3>Real-time collaboration</h3>
+                    <p>An immersive platform for seamless teamwork, innovation, and shared success in the world of coding.</p>
+                </div>
+                <div class="tile storage">
+                    <img src="https://cdn.icon-icons.com/icons2/1951/PNG/512/26_122663.png" alt="storage icon">
+                    <h3>Join the Codify Community</h3>
+                    <p>An inclusive space where passionate coders unite to learn, share, and collaborate, fostering a vibrant ecosystem of knowledge and growth.</p>
+                </div>
+                <!-- Add other feature tiles as needed -->
             </div>
-            <div class="box_astronaut">
-                <img class="object_astronaut" src="http://salehriaz.com/404Page/img/astronaut.svg" width="140px">
-            </div>
         </div>
-        <div class="glowing_stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
 
+        <div class="section3">
+            <img src="https://github.com/hammercait/fylo-dark-theme-landing-page/blob/master/images/illustration-stay-productive.png?raw=true" alt="people working">
+            <div class="sec3text">
+                <h1>Stay Connected, Stay Productive</h1>
+                <p>Codify ensures seamless collaboration, enabling you to access and share files effortlessly, fostering productivity no matter where you are..<br><br>Unlock the potential of remote work and achieve your goals together.</p>
+                <a href="/AboutUs">Check for More      <img src="https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/icon-arrow.svg" alt="tiny arrow"></a>
+            </div>
         </div>
+
+        <!-- Include other sections as needed -->
 
     </div>
 
-</body>
-<!-- partial -->
-<script  src="./script.js"></script>
-
-
-
-
-{% block section %}{% endblock section %}
-{% block footer %}{% endblock footer %}
-{% endblock body %}
+    {% block section %}{% endblock section %}
+    {% block footer %}{% endblock footer %}
+    {% endblock body %}
