@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
     background-color: #000;
     overflow-x: hidden;
     /* Prevent horizontal scrolling */
@@ -99,3 +97,6 @@ ul:not(.browser-default) {
 nav ul {
     margin: -46px;
 }
+
+
+/*dhdbf*/

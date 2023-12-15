@@ -1,6 +1,5 @@
 from django.shortcuts import render,HttpResponse
 from datetime import datetime
-
 from Home.models import Contact
 
 def index(request):
